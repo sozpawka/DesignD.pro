@@ -1,0 +1,6 @@
+{% extends 'studio/base.html' %}
+{% block content %}
+<h2>Удалить заявку</h2>
+<p>Вы уверены, что хотите удалить заявку '{{ application.title }}'?</p>
+<form method="post">{% csrf_token %}<button type="submit">Да, удалить</button></form>
+{% endblock %}

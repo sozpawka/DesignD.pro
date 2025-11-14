@@ -1,0 +1,10 @@
+{% extends 'studio/base.html' %}
+{% block content %}
+<h2>Мои заявки</h2>
+<p><a href="{% url 'studio:create_application' %}">Создать новую заявку</a></p>
+<ul>
+{% for a in applications %}
+    <li>{{ a.created }} - {{ a.title }} ({{ a.get_status_display }}) - <form style="display:inline" method="post" action="{% url 'studio:delete_application' a.pk %}">{% csrf_token %}<button type="submit">Удалить</button></form></li>
+{% empty %}<li>У вас нет заявок.</li>{% endfor %}
+</ul>
+{% endblock %}

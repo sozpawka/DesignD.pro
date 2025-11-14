@@ -1,0 +1,9 @@
+{% extends 'studio/base.html' %}
+{% block content %}
+<h2>Вход</h2>
+<form method="post">{% csrf_token %}
+    <p><label>Логин: <input type="text" name="username"></label></p>
+    <p><label>Пароль: <input type="password" name="password"></label></p>
+    <button type="submit">Войти</button>
+</form>
+{% endblock %}

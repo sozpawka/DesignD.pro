@@ -1,0 +1,10 @@
+{% extends 'studio/base.html' %}
+{% block content %}
+<h2>Последние выполненные заявки</h2>
+<p>Заявок в статусе 'Принято в работу': {{ in_progress_count }}</p>
+<ul>
+{% for a in recent_done %}
+    <li>{{ a.created }} - {{ a.title }} ({{ a.get_category_display }}) {% if a.image %}<img src="{{ a.image.url }}" alt="{{ a.title }}" width="120">{% endif %}</li>
+{% empty %}<li>Пока нет выполненных заявок.</li>{% endfor %}
+</ul>
+{% endblock %}
