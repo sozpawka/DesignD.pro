@@ -1,0 +1,24 @@
+{% extends "studio/base.html" %}
+{% block content %}
+<h1>{% if category %}Редактировать категорию{% else %}Добавить категорию{% endif %}</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <p>
+        <label>Название категории:</label><br>
+        <input type="text" name="name" value="{{ category.name|default:'' }}">
+    </p>
+
+    <p>
+        <label>Slug:</label><br>
+        <input type="text" name="slug" value="{{ category.slug|default:'' }}">
+    </p>
+
+    <button type="submit">
+        {% if category %}Сохранить{% else %}Создать категорию{% endif %}
+    </button>
+
+    <a href="{% url 'studio:category_list' %}">Отмена</a>
+</form>
+{% endblock %}

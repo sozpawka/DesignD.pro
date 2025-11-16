@@ -1,0 +1,37 @@
+{% extends "studio/base.html" %}
+{% block content %}
+
+<h1>Админ-панель</h1>
+<p>
+  <a href="{% url 'studio:category_list' %}">Управление категориями</a> |
+  <a href="{% url 'studio:category_create' %}">Добавить категорию</a>
+</p>
+
+<table>
+<tr>
+  <th>ID</th>
+  <th>Название</th>
+  <th>Статус</th>
+  <th>Автор</th>
+  <th>Создано</th>
+  <th>Действия</th>
+</tr>
+
+{% for a in applications %}
+<tr>
+  <td>{{ a.id }}</td>
+  <td>{{ a.title }}</td>
+  <td>{{ a.status }}</td>
+  <td>{{ a.user }}</td>
+  <td>{{ a.created }}</td>
+  <td>
+      <a href="{% url 'studio:application_detail' a.pk %}">Открыть</a>
+  </td>
+</tr>
+{% empty %}
+<tr><td colspan="6">Нет заявок</td></tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "studio/base.html" %}
+{% block content %}
+<h1>Категории</h1>
+
+<a href="{% url 'studio:category_create' %}">Создать категорию</a>
+
+<ul>
+    {% for c in categories %}
+        <li>
+            {{ c.name }}
+            — <a href="{% url 'studio:category_edit' c.pk %}">Изменить</a>
+            — <a href="{% url 'studio:category_delete' c.pk %}">Удалить</a>
+        </li>
+    {% empty %}
+        <li>Нет категорий</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

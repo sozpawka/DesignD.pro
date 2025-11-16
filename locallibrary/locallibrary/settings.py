@@ -65,7 +65,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'locallibrary.wsgi.application'
 
 # Database
-# (по умолчанию sqlite — если нужно, можно настроить)
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -74,7 +74,6 @@ DATABASES = {
 }
 
 # Password validation
-# Оставил стандартные валидаторы
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -92,13 +91,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 LANGUAGE_CODE = 'ru-ru'
-TIME_ZONE = 'Europe/Moscow'
+TIME_ZONE = 'Asia/Tomsk'
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+# Static files
 STATIC_URL = '/static/'
 
-# Media (for uploaded images)
+# Media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'

@@ -1,0 +1,12 @@
+{% extends "studio/base.html" %}
+{% block content %}
+
+<h1>Завершить заявку: {{ application.title }}</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить</button>
+</form>
+
+{% endblock %}

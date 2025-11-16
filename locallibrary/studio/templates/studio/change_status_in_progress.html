@@ -1,0 +1,15 @@
+{% extends "studio/base.html" %}
+
+{% block content %}
+<h2>Принять заявку в работу</h2>
+
+<p>Заявка: <strong>{{ application.title }}</strong></p>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Принять в работу</button>
+</form>
+
+<a href="{% url 'studio:dashboard' %}">Назад</a>
+{% endblock %}

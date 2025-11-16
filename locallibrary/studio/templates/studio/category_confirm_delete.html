@@ -1,0 +1,11 @@
+{% extends "studio/base.html" %}
+{% block content %}
+<h1>Удалить категорию: {{ category.name }}</h1>
+<p>При удалении категории будут удалены все заявки этой категории.</p>
+
+<form method="post">
+  {% csrf_token %}
+  <button type="submit">Подтвердить удаление</button>
+  <a href="{% url 'studio:category_list' %}">Отмена</a>
+</form>
+{% endblock %}
