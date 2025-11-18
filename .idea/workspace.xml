@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c61ab5c-64cf-424b-b949-820997438a20" name="Changes" comment="8_commit_18.11">
-      <change beforePath="$PROJECT_DIR$/locallibrary/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/studio/templates/studio/admin_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/studio/templates/studio/admin_panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/studio/templates/studio/application_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/studio/templates/studio/application_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/studio/templates/studio/category_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/studio/templates/studio/category_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/studio/templates/studio/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/studio/templates/studio/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/studio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/studio/views.py" afterDir="false" />
+    <list default="true" id="7c61ab5c-64cf-424b-b949-820997438a20" name="Changes" comment="9_commit_18.11">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,7 @@
     "Django Server.Design.pro.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Merging master",
     "last_opened_file_path": "C:/Users/Sozpawka/PycharmProjects/Design.pro",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -120,7 +115,7 @@
       <workItem from="1763356013155" duration="7844000" />
       <workItem from="1763440862767" duration="4211000" />
       <workItem from="1763450275954" duration="9243000" />
-      <workItem from="1763459695892" duration="2231000" />
+      <workItem from="1763459695892" duration="2744000" />
     </task>
     <task id="LOCAL-00001" summary="2_commit_15.11">
       <option name="closed" value="true" />
@@ -178,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763458607811</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="9_commit_18.11">
+      <option name="closed" value="true" />
+      <created>1763462200408</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1763462200408</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +206,8 @@
     <MESSAGE value="6_commit_18.11" />
     <MESSAGE value="7_commit_18.11" />
     <MESSAGE value="8_commit_18.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="8_commit_18.11" />
+    <MESSAGE value="9_commit_18.11" />
+    <option name="LAST_COMMIT_MESSAGE" value="9_commit_18.11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
